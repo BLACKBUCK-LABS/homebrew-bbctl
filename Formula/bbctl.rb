@@ -5,21 +5,21 @@
 class Bbctl < Formula
   desc "Gated EC2 access for Blackbuck — auditable, approval-driven, immutable logs"
   homepage "https://github.com/Blackbuck-LABS/bbctl"
-  version "0.5.1"
+  version "0.5.2"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Blackbuck-LABS/bbctl/releases/download/v0.5.1/bbctl_0.5.1_darwin_x86_64.tar.gz"
-      sha256 "d756a0660b5dfc38b012aa9bd2a1b4f34f57827c0b1a6dca33986af075c848f2"
+      url "https://github.com/Blackbuck-LABS/bbctl/releases/download/v0.5.2/bbctl_0.5.2_darwin_x86_64.tar.gz"
+      sha256 "651367aeb8500b8b308f1ae27c19b49985a98ed294859539c1bae2fdb2da4629"
 
       define_method(:install) do
         bin.install "bbctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Blackbuck-LABS/bbctl/releases/download/v0.5.1/bbctl_0.5.1_darwin_arm64.tar.gz"
-      sha256 "baaf22a928d6047186a23f4d5b8d2453c9baec4778e105323c942edf240529e6"
+      url "https://github.com/Blackbuck-LABS/bbctl/releases/download/v0.5.2/bbctl_0.5.2_darwin_arm64.tar.gz"
+      sha256 "aefbf07321bcc5236e061a9e1473b5c741fa1be6afedcc44c3afed7a2382ef60"
 
       define_method(:install) do
         bin.install "bbctl"
@@ -29,15 +29,15 @@ class Bbctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Blackbuck-LABS/bbctl/releases/download/v0.5.1/bbctl_0.5.1_linux_x86_64.tar.gz"
-      sha256 "ad463a8e3e99c224e60a71b2a127356011a37cc1f1ecf36b0f237208f4a0ee96"
+      url "https://github.com/Blackbuck-LABS/bbctl/releases/download/v0.5.2/bbctl_0.5.2_linux_x86_64.tar.gz"
+      sha256 "90e4289812fadfd2072ce1ab6867dfd075179b4db9f43b6772fd540495e6d986"
       define_method(:install) do
         bin.install "bbctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Blackbuck-LABS/bbctl/releases/download/v0.5.1/bbctl_0.5.1_linux_arm64.tar.gz"
-      sha256 "9bb06a3a9b8a1d38f930e46f55530f5443cdb6b44a235b75a084dca2fa0375e4"
+      url "https://github.com/Blackbuck-LABS/bbctl/releases/download/v0.5.2/bbctl_0.5.2_linux_arm64.tar.gz"
+      sha256 "2d545391f4f5b1290da9a90d339e592b709ab9157c4dc9579dd7b42877e72b26"
       define_method(:install) do
         bin.install "bbctl"
       end
