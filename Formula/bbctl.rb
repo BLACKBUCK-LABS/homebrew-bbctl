@@ -11,7 +11,7 @@ class Bbctl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Blackbuck-LABS/bbctl/releases/download/v0.5.15/bbctl_0.5.15_darwin_x86_64.tar.gz"
-      sha256 "aab0e218179ae6331c4abf3bc02a0abf86e17f3e24cd454c6338a594eac8d6f8"
+      sha256 "d7a90c24c2744624cad172ccdf96387246551b1a907a33759b60aa5262929048"
 
       define_method(:install) do
         bin.install "bbctl"
@@ -19,7 +19,7 @@ class Bbctl < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Blackbuck-LABS/bbctl/releases/download/v0.5.15/bbctl_0.5.15_darwin_arm64.tar.gz"
-      sha256 "79cef9e00b4f3743f6c14d003d8ff9f64aa7c1b3c0578a8e87f926f495eefd1b"
+      sha256 "54fb26afc38aa81a75e4284803da923279716a0033b386a56a1d6596a15c8b95"
 
       define_method(:install) do
         bin.install "bbctl"
@@ -30,14 +30,14 @@ class Bbctl < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Blackbuck-LABS/bbctl/releases/download/v0.5.15/bbctl_0.5.15_linux_x86_64.tar.gz"
-      sha256 "e0878643adb985a4ed85a3ec6e55c1f635131c48dfab42f7d663ac2d7e7349f1"
+      sha256 "2ae67c68c8ecd4f44051c4af2cf18ff4aa1764eb25ee41aa55e0fb33135151d0"
       define_method(:install) do
         bin.install "bbctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Blackbuck-LABS/bbctl/releases/download/v0.5.15/bbctl_0.5.15_linux_arm64.tar.gz"
-      sha256 "44dd0d453abf1dae8101cdf82710342183b4057b9dc67084074cd77cf5fa0084"
+      sha256 "0041aa01ee655d665a6c71efc03de00e972ad2ca6b38227ab299b64a85efbec1"
       define_method(:install) do
         bin.install "bbctl"
       end
